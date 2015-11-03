@@ -11,7 +11,7 @@
       <column name="NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="STATUS" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="PRIORITY" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
-      <primary-key name="SYS_PK_10136" columns="ID"/>
+      <primary-key name="SYS_PK_10091" columns="ID"/>
     </table>
   </data-source>
 </component>

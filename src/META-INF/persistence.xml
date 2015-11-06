@@ -5,6 +5,9 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <mapping-file>data/TABLENAME.xml</mapping-file>
         <class>data.TABLENAME</class>
+        <class>data.bug52114.TableName</class>
+        <class>data.bug52114.Test</class>
+        <class>data.bug52114.Users</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:hsqldb:file:C:/Users/Olga Pavlova/IdeaProjects/PersistenceIssues/DB/DB"/>
             <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbc.JDBCDriver"/>

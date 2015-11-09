@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @NamedQueries({@NamedQuery(name = "Foo.findCreated",
-        query = "SELECT f FROM TABLENAME f WHERE f.status=" +
+        query = "SELECT f FROM Table1 f WHERE f.status=" +
                 "testdata.FooStatus1.created " +
                 "ORDER BY f.priority DESC")})
 @Table(name = "TABLE_NAME", schema = "PUBLIC", catalog = "PUBLIC")

@@ -26,14 +26,14 @@ public class AccessType16061 {
     private int id1;
     @AccessType("field")
     public int getId1() {
-        return id;
+        return id1;
     }
 
     //Transient: can be without setter/getter
     @Transient
     private int id2;
     public int getId2() {
-        return id;
+        return id2;
     }
 
 }

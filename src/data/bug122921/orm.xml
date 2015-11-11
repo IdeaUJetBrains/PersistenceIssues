@@ -1,0 +1,15 @@
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+                 version="2.1">
+
+    <entity name="test2" class="data.bug122921.Parent" access="FIELD">
+        <table name="PARENT"/>
+        <secondary-table name="second_table">
+            <primary-key-join-column name="ID" referenced-column-name="ID"/>
+        </secondary-table>
+        <attributes>
+            <basic name="yearsOfService">
+                <column name="years" table="second_table"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

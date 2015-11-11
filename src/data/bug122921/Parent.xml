@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity name="test1" class="data.bug122921.Parent" access="FIELD">
+        <table name="PARENT"/>
+        <secondary-table name="CHILD">
+            <primary-key-join-column name="ID" referenced-column-name="ID_CHILD"/>
+        </secondary-table>
+        <attributes>
+            <basic name="idParentCh">
+                <column name="ID_PARENT_CH"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

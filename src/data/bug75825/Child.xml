@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="data.bug75825.Child75825">
+        <table name="CHILD" schema="PUBLIC" catalog="PUBLIC"/>
+        <attributes>
+            <id name="idChild">
+                <column name="ID_CHILD" precision="32"/>
+            </id>
+            <basic name="name">
+                <column name="NAME" nullable="false" precision="32"/>
+            </basic>
+            <basic name="idParentCh">
+                <column name="ID_PARENT_CH" nullable="false" precision="32"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

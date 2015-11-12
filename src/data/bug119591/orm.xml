@@ -1,0 +1,12 @@
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+                 version="2.1">
+
+    <entity name="test2" class="data.bug122921.Parent" access="FIELD">
+        <table name="PARENT"/>
+        <attributes>
+                <basic name="name">
+                    <column name="NAME" column-definition="SMALLINT default 1"/>
+                </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

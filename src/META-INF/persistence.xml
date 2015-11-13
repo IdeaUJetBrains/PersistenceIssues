@@ -4,17 +4,19 @@
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <mapping-file>data/TABLENAME.xml</mapping-file>
+        <mapping-file>data/bug132317/Precision.xml</mapping-file>
         <class>data.TABLENAME</class>
         <class>data.bug52114.TableName</class>
         <class>data.bug52114.Users</class>
         <class>data.bug124883.Test2</class>
         <class>data.bug124883.Bug</class>
+        <class>data.bug132317.Precision</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:hsqldb:file:C:/Users/Olga Pavlova/IdeaProjects/PersistenceIssues/DB/DB"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
             <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbc.JDBCDriver"/>
-            <property name="hibernate.connection.username" value="SA"/>
-            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="data.bug132317.Precision">
+        <table name="Precision" schema="PUBLIC" catalog="PUBLIC"/>
+        <attributes>
+            <basic name="precision20S4">
+                <column name="PRECISION20S4" nullable="false" precision="4"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

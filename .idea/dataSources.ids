@@ -1104,6 +1104,7 @@
       <column name="ID_CHILD" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="NAME" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
       <column name="ID_PARENT_CH" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
+      <column name="VALUE" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="SYS_PK_10108" columns="ID_CHILD"/>
       <foreign-key name="ID_PARENT_CH_FK" columns="ID_PARENT_CH" ref-table="PARENT" ref-schema="PUBLIC" ref-catalog="PUBLIC" ref-columns="ID_PARENT" update-rule="0" delete-rule="0"/>
     </table>
@@ -1111,6 +1112,7 @@
       <column name="ID_PARENT" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="NAME" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="SYS_PK_10104" columns="ID_PARENT"/>
+      <exported-key name="ID_PARENT_CH_FK" table="CHILD" schema="PUBLIC" catalog="PUBLIC" columns="ID_PARENT_CH"/>
     </table>
     <table name="Precision" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
       <column name="PRECISION20S4" sqlType="DECIMAL" precision="20" scale="4" nullable="true" jdbcType="3"/>

@@ -1117,6 +1117,12 @@
     <table name="Precision" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
       <column name="PRECISION20S4" sqlType="DECIMAL" precision="20" scale="4" nullable="true" jdbcType="3"/>
     </table>
+    <table name="SOMETABLE" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID1" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="ID2" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
+      <column name="A_DATE" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <primary-key name="SYS_PK_11156" columns="ID1"/>
+    </table>
     <table name="TABLE_NAME" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
       <column name="ID" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>

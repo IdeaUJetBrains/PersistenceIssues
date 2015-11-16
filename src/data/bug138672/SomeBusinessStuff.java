@@ -4,8 +4,9 @@ public class SomeBusinessStuff {
 
     public SomeEntity someMethod(Long userId, String normalizedMsisdn) {
         SomeEntity someEntity = new SomeEntity();
-        someEntity.setId1(normalizedMsisdn);
-        someEntity.setId2(userId);
+        //todo uncomment to view a bug
+        /*someEntity.setId1(normalizedMsisdn);
+        someEntity.setId2(userId);*/
         return someEntity;
     }
 }

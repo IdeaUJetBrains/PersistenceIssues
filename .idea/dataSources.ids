@@ -1108,6 +1108,11 @@
       <primary-key name="SYS_PK_10108" columns="ID_CHILD"/>
       <foreign-key name="ID_PARENT_CH_FK" columns="ID_PARENT_CH" ref-table="PARENT" ref-schema="PUBLIC" ref-catalog="PUBLIC" ref-columns="ID_PARENT" update-rule="0" delete-rule="0"/>
     </table>
+    <table name="EXISTENT" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="EXISTENT_ID" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="EXISTENT_NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="SYS_PK_10129" columns="EXISTENT_ID"/>
+    </table>
     <table name="PARENT" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
       <column name="ID_PARENT" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="NAME" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
@@ -1121,7 +1126,7 @@
       <column name="ID1" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="ID2" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
       <column name="A_DATE" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
-      <primary-key name="SYS_PK_11156" columns="ID1"/>
+      <primary-key name="SYS_PK_10126" columns="ID1"/>
     </table>
     <table name="TABLE_NAME" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
       <column name="ID" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>

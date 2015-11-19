@@ -14,7 +14,7 @@ import java.util.Date;
 @Table(name = "SOMETABLE")
 @NamedQueries({
         @NamedQuery(name = QUERY_MIN_DATE, query = "select min(aDate) from "
-                + "SomeEntity where id2 = :" + QUERY_PARAM_USER_ID)
+                + "SomeEntity1 where id2 = :" + QUERY_PARAM_USER_ID)
 })
 public class SomeEntity {
         public static final String QUERY_MIN_DATE = "QUERY_MIN_DATE";
